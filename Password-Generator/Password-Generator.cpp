@@ -30,6 +30,7 @@ void initilizer(vector <string>& x)
     x.push_back("abcdefghijklmnopqrstuvwxyz");
     x.push_back("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     x.push_back(" !@#$%^&*()_-+=~[]{}\|:;<>.,?/'");
+    x.push_back("0123456789");
 }
 int greeting()
 {
