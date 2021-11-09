@@ -58,5 +58,12 @@ string passGenerator(const vector<string>& passVec, int plength)
         xSize = (passVec[ySize]).size();
         password += (passVec[ySize])[(xrand % xSize)];
     }
+   //saving password in txt file
+    ofstream myPass;
+    myPass.open("myPass.txt" , ios::out | ios::trunc);
+    myPass<<password;
+    
+    myPass.close();
+    
     return password;
 }
